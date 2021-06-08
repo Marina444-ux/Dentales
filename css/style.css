@@ -1,0 +1,438 @@
+
+/* Общие стили */
+
+
+
+:root {
+    --text-color: rgba(112, 113, 112, 1);
+    --text-color-white: rgba(255, 255, 255, 1);
+    --grin: rgba(106, 139, 158, 1);
+    --coffee: rgba(166, 147, 152, 1);
+    --beige: rgba(225, 224, 224, 1);
+    --gray: rgba(210, 224, 232, 1);
+    --dark-gray: rgba(62, 78, 87, 1);
+    --dark-green: rgba(106, 139, 158, 1);
+    --gray-bgr: rgba(233, 238, 240, 1);
+    --brown: rgba(92, 92, 92, 1);
+    --grin-hover: rgba(125, 164, 186, 1);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: var(--gray-bgr);
+}
+
+
+body {
+    font-family: 'Marope', 'Arial', 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-style: normal;
+    line-height: 150%;
+}
+
+a {
+    color: var(--coffee);
+    transition: all 0.4s ease;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn {
+    width: 260px;
+    height: 47px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-white);
+    background-color: var(--grin);
+    text-decoration: none ;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.color-coffee {
+    background-color: var(--coffee);
+}
+
+.btn-size-color {
+    width: 164px;
+    height: 42px;
+    background-color: transparent;
+    border:  1px solid  rgba(106, 139, 158, 1);
+    color: var(--grin);
+}
+
+.btn:hover {
+    background-color: var(--grin-hover);
+}
+
+
+
+
+/* блок верхний Стоматология */
+
+.section-bgr {
+    height: 612px;
+    background-color: var(--text-color-white);
+    margin-top: 128px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-around;
+    height: 95px;
+    align-items: center;
+}
+
+.header__logo img {
+    display: block;
+} 
+
+.header__nav {
+    flex-grow: 1;
+    margin-left: 17px;
+}
+
+.header__logo {
+    margin-left: 98px;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.header__nav-item {
+    margin-right: 22px;
+    font-size: 14px;
+}
+
+.header__nav-item a {
+    color: var(--brown);
+    text-decoration: none;
+}
+
+.header__nav-item a:hover {
+    color: var(--coffee);
+}
+
+.header__nav-item a::after {  /*псевдо элемент, подчёркивание пункта меню  */
+    content: '';
+    width: 0; /*подчеркивание начинается с нуля и до 100%, 100% указываем в классе ниже  */ 
+    height: 2px;
+    background-color: var(--coffee);
+    display: block;  /*свойство для блочной модели, чтобы применились свойства выше  */
+    transition: width 0.4s ease;  /*добавляем плавность подчеркиванию  */
+}
+
+.header__nav-item a:hover::after {
+    width: 100%;
+}
+
+.header__nav-item:last-child {
+    margin-right: 0px;
+}
+
+.header__right {
+    display: flex;
+    margin-right: 98px;
+    margin-top: 10px;
+}
+
+.header__button {
+    margin-right: 30px;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--coffee);
+    background: transparent;
+    border-top:none ;
+    border-left:none;
+    border-right:none;
+    color: var(--coffee);
+    cursor: pointer;
+}
+
+.header__phone {
+    text-decoration: none;
+    color: var(--brown);
+}
+
+.section__list {
+    display:flex ;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.section__left {
+    margin-left: 70px;
+}
+
+.section__left-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 15px;
+}
+
+.text-beige {
+    color: var(--coffee);
+}
+
+.sectioh__left-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sectioh__left-btn {
+    margin-top: 49px;
+}
+
+/* блок  Почему мы Более 10 лет.... */
+
+.section {
+    margin-top: 80px;
+}
+
+.about {
+    display:flex ;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.text-grin {
+    color: var(--grin);
+}
+
+.large {
+    font-size: 36px;
+}
+
+.text-white {
+    color:var(--text-color-white);
+}
+
+.about__right-span {
+    font-size: 250px;
+    font-weight: 800;
+    color: var(--grin);
+    margin-top: 150px;
+    display: block;
+}
+
+.medium {
+    font-size: 30px;
+}
+
+.text-size {
+    color: var(--text-color-white);
+    margin-top: 0;
+}
+
+.about__right-bottom {
+    margin-top: 55px;
+    margin-left: 70px;
+}
+
+/* /*----------- Блок преимуществ------ */
+
+.merit__block-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--coffee);
+}
+
+.merit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 180px;
+}
+
+.merit-btn {
+    margin-left: 450px;
+    margin-top: 30px;
+}
+
+
+/* --------------Наши услуги--------------- */
+
+.services-title {
+    margin-left: 400px;
+}
+
+.border {
+    width: 100px;
+    height: 2px;
+    background-color: var(--grin);
+    margin-top: 28px;
+    margin-left: 510px;
+}
+
+.services__block {
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 67px;
+    grid-column-gap: 30px;
+}
+
+.services__block-item {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--text-color-white);
+    width: 555px;
+    height: 320px;
+}   
+
+.services__block-title {
+    margin-top: 52px;
+    margin-bottom: 30px;
+}
+
+.services__block-btn {
+    
+}
+
+.services__block-img {
+    margin-top: 110px;
+}
+
+
+.first-color {
+    background-color: var(--gray);
+}
+
+.second-color {
+    background-color: var(--text-color-white);
+}
+
+
+
+
+
+
+/* ----------------------Всплывающее окно Заказать звонок----------------- */
+
+.popup {
+    width: 600px;
+    border-radius: 5px;    
+    max-width: 100%;
+    background: var(--gray);
+    padding: 60px 90px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.popups__inner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 2;
+    display: none; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.popup h2 {
+    font-size: 30px
+    
+}
+
+
+
+.popup form {
+    margin-top: 25px;
+}
+
+.popup input {
+    display: block;
+    margin: 0 auto 15px; 
+    padding: 15px 10px;
+    border: none;
+    width: 420px;
+}
+
+.form-btn {
+    width: 260px;
+    height: 47px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-white);
+    background-color: var(--grin);
+    text-decoration: none ;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 420px;
+    border: none;
+}
+
+.text {
+    height: 200px;
+
+}
+
+.popups__inner.active {
+    display: block;
+}
+
+.close__popup {
+    position: absolute;
+    top: 9px;
+    right: 22px;
+    font-size: 36px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* --------------Всплывающее окно Заявка отправлена----------- */
+.shipment__popup {
+    width: 500px;
+}
+
+.shipment__popup.active {
+    display: block;
+}
+
+.shipment__popup-text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
