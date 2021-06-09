@@ -361,7 +361,7 @@ a {
     align-items: center; 
     z-index: 2;
     display: none; 
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.6); */
 }
 
 
@@ -420,17 +420,8 @@ a {
 }
 
 /* --------------Всплывающее окно Заявка отправлена----------- */
-.shipment__popup {
+.submitt {
     width: 500px;
-}
-
-.shipment__popup.active {
-    display: block;
-}
-
-.shipment__popup-text {
-    font-size: 24px;
-    font-weight: 500;
 }
 
 
