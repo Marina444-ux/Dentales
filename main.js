@@ -5,22 +5,24 @@ $('.header__button').on('click', function() {
   });
   
   $('.close__popup').on('click', function() {
-    $('.popups__inner').removeClass('active');
+    $('.callback').removeClass('active');
   });
   
 
   $('.form-btn').on('click', function() {
-  $('.shipment__popup').addClass('active');
+    evt. preventDefault();
+    $('.popups__inner').removeClass('active');
+    $('.successful') .addClass('activ');
   });
   
   $('.close__popup').on('click', function() {
-  $('.popups__inner').removeClass('active');
+    $('.successful').removeClass('active');
   });
 
   $('.sectioh__left-btn').on('click', function() {
-  $('.consultation').addClass('active');
+    $('.consult') .css ({'top': $(window).scrollTop() +100}).addClass('active');
   });
   
   $('.close__popup').on('click', function() {
-  $('.popups__inner').removeClass('active');
+    $('.consult').removeClass('active');
   });
