@@ -34,3 +34,4 @@ $('.header__button').on('click', function() {
   $('.close__popup').on('click', function() {
     $('.appoint').removeClass('active');
   });
+  // 
