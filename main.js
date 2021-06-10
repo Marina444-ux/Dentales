@@ -26,3 +26,11 @@ $('.header__button').on('click', function() {
   $('.close__popup').on('click', function() {
     $('.consult').removeClass('active');
   });
+
+  $('.merit-btn').on('click', function() {
+    $('.appoint') .css ({'top': $(window).scrollTop() +100}).addClass('active');
+  });
+  
+  $('.close__popup').on('click', function() {
+    $('.appoint').removeClass('active');
+  });

@@ -196,17 +196,17 @@
                 <a class="close__popup">X</a>
                 <h2>Перезвоните мне</h2>
                 <p>Отправьте заявку и мы свяжемся с вами<br> в ближайшее время </p>
-                <form>
-                    <label for="">Имя</label> 
-                    <input type="text" name="name"  required  minlength="3">
-                    <label for="">Фамилия</label> 
-                    <input type="text" name="name"  required>
-                    <label for="">Телефон</label> 
-                    <input type="text" name="name" required>
+                <form name="form" action="/" method="post"> 
+                    <label for="first_name">Имя</label> 
+                    <input type="text" name="first_name"  required  minlength="3">
+                    <label for="last_name">Фамилия</label> 
+                    <input type="text" name="last_name"  required>
+                    <label for="phone">Телефон</label> 
+                    <input type="text" name="phone" required>
                     <button class="form-btn" type="submit">Отправить</button>
                 </form>
             </div>
-        </div>
+        </div> 
     <!-- -----------Всплывающее окно Заявка отправлена------------>
         <div class="popups__inner successful">
             <div class="popup shipment__popup">
@@ -223,17 +223,37 @@
         <a class="close__popup">X</a>
         <h2>Запись на бесплатную консультацию</h2>
         <p>Отправьте заявку и мы свяжемся с вами<br> в ближайшее время </p>
-        <form>
-            <label for="">Ваше ФИО</label> 
-            <input type="text" name="name"  required  minlength="3">
-            <label for="">Ваш телефон</label>  
-            <input type="text" name="name"  required>
-            <label for="">Ваш E-mail</label> 
-            <input type="text" name="name" required>
+        <form name="form1" action="/" method="post">
+            <label for="full-name">Ваше ФИО</label> 
+            <input type="text" name="full-name"  required  minlength="3">
+            <label for="phone">Ваш телефон</label>  
+            <input type="text" name="phone"  required>
+            <label for="email">Ваш E-mail</label> 
+            <input type="email" name="name" required>
             <button class="form-btn" type="submit">Отправить</button>
         </form>
+    </div> 
+    <!-- -------------------------------------------------------------- -->
+
+<!-- --------------- Всплывающее окно Записи на прием------------ -->
+<div class="popups__inner appoint">
+    <div class="popup">
+        <a class="close__popup">X</a>
+        <h2>Запись на прием к врачу</h2>
+        <p>Отправьте заявку и мы свяжемся с вами<br> в ближайшее время </p>
+        <form name="form1" action="/" method="post">
+            <label for="full-name">Ваше ФИО</label> 
+            <input type="text" name="full-name"  required  minlength="3">
+            <label for="phone">Ваш телефон</label>  
+            <input type="text" name="phone"  required>
+            <label for="email">Ваш E-mail</label> 
+            <input type="email" name="name" required>
+            <label for="full-name">ФИО доктора, к которому хотите записаться</label> 
+            <input type="text" name="fuii-name" required>
+            <button class="form-btn" type="submit">Записаться на прием</button>
+        </form>
     </div>
-</div> 
+</div>
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
