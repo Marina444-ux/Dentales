@@ -212,7 +212,7 @@ a {
 /* блок  Почему мы Более 10 лет.... */
 
 .section {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .about {
@@ -296,6 +296,7 @@ a {
     background-color: var(--grin);
     margin-top: 28px;
     margin-left: 510px;
+    margin-bottom: 55px;
 }
 
 .services__block {
@@ -334,7 +335,40 @@ a {
     background-color: var(--text-color-white);
 }
 
+.color-beige {
+    background-color: var(--beige);
+}
 
+/* ---------------------Стоимость услуг----------------- */
+
+.prices__title {
+    margin-left: 360px;
+}
+
+.prices__paragraph {
+    margin-left: 430px;
+}
+
+/* ------------------------Блок Оборудование в нашей клинике------------------- */
+
+.text-coffee {
+    color: var(--coffee);
+}
+
+.hardware__title {
+    margin-left: 380px;
+}
+
+.hardware__paragraph {
+    margin-left: 280px;
+}
+
+.fardware__photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
 
 
 

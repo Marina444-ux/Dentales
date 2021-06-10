@@ -28,7 +28,7 @@ $('.header__button').on('click', function() {
   });
 
   $('.merit-btn').on('click', function() {
-    $('.appoint') .css ({'top': $(window).scrollTop() +100}).addClass('active');
+    $('.appoint') .addClass('active');
   });
   
   $('.close__popup').on('click', function() {
