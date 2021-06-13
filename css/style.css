@@ -283,7 +283,7 @@ a {
 }
 
 .merit-btn {
-    margin-left: 450px;
+    margin-left: 430px;
     margin-top: 30px;
 }
 
@@ -325,10 +325,17 @@ a {
     margin-bottom: 30px;
 }
 
+.services__paragraph {
+    margin-bottom: 35px;
+}
 
 
 .services__block-img {
     margin-top: 110px;
+}
+
+.services__block-btn {
+    margin-top: 25px;
 }
 
 
@@ -553,5 +560,98 @@ a {
 .submitt {
     width: 500px;
 }
+
+/* -----------------------------Блок Задайте вопрос главному врачу---------------- */
+
+.question {
+    margin-bottom: 180px;
+}
+
+.question__content {
+    display: flex;
+    justify-content: center;
+}
+
+.tetx-regular {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.question__paragraph{
+    
+    margin-top: 20px;
+}
+
+.question__border {
+    margin-left: 0;
+}
+
+
+.question__form {
+    width: 555px;
+    padding: 60px 90px;
+    background: var(--text-color-white);
+    margin-right: 30px;
+}
+
+
+.question__form input {
+    display: block;
+    margin: 0 auto 30px; 
+    padding: 15px 10px;
+    border: 1px solid rgba(201, 201, 201, 1);
+    width: 375px;
+}
+
+.question__form textarea {
+    display: block;
+    margin: 0 auto 30px; 
+    padding: 15px 10px;
+    border: 1px solid rgba(201, 201, 201, 1);
+    width: 375px;
+    height: 90px;
+    overflow:auto;
+}
+
+.bgr-coffee {
+    background-color: var(--coffee);
+}
+
+iframe {
+    filter: grayscale(100%);
+}
+
+/* ----------------------Футер---------------- */
+
+.footer {
+    background-color: var(--dark-green);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 53px;
+}
+
+.footer__paragraph {
+    font-size: 14px;
+}
+
+.footer__social {
+    flex-grow: 1;
+    margin-left: 200px;
+    
+}
+
+.footer__link {
+    margin-right: 22px;
+    
+}
+
+.footer__social a {
+    text-decoration: none;
+}
+
+
 
 
