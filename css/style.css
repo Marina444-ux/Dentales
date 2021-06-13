@@ -91,6 +91,10 @@ a {
 
 /* блок верхний Стоматология */
 
+.page {
+    position: relative;
+}
+
 .section-bgr {
     height: 612px;
     background-color: var(--text-color-white);
@@ -207,6 +211,20 @@ a {
 
 .sectioh__left-btn {
     margin-top: 49px;
+}
+
+.arrow {
+    position: fixed;
+    z-index: 9999;
+    bottom: 5%;
+    right: 10%;
+    height: 64px;
+    width: 64px;
+    opacity: .6;
+    color: transparent;
+    padding: 10px;
+    margin: 5px 15px 15px 5px;
+    
 }
 
 /* блок  Почему мы Более 10 лет.... */
@@ -393,6 +411,60 @@ a {
 .bgr-white {
     background-color: var(--text-color-white);
     height: 960px;
+}
+
+.fardware__photo1 { 
+    background: url('../img/childrens.png') no-repeat 50% 50%;  
+}
+
+.fardware__photo2 {
+    background: url('../img/office1.png') no-repeat 50% 50%;  
+}
+
+.fardware__photo3 {
+    background: url('../img/office2.png') no-repeat 50% 50%;  
+}
+
+.fardware__photo4 {
+    background: url('../img/x-ray1.png') no-repeat 50% 50%;  
+}
+
+.fardware__photo5 {
+    background: url('../img/drill-bit.png') no-repeat 50% 50%;  
+}
+
+.fardware__photo6 {
+    background: url('../img/x-ray2.png') no-repeat 50% 50%;  
+}
+
+.size-photo {
+    display: block;
+    width: 365px; 
+    height: 265px; 
+}
+    
+.fardware__photo1:hover { 
+    background: url('../img/childrens-h.png') no-repeat 50% 50%; 
+}
+
+.fardware__photo2:hover { 
+    background: url('../img/office1-h.png') no-repeat 50% 50%; 
+}
+
+.fardware__photo3:hover { 
+    background: url('../img/office2-h.png') no-repeat 50% 50%; 
+}
+
+.fardware__photo4:hover { 
+    background: url('../img/x-rau1-h.png') no-repeat 50% 50%; 
+}
+
+.fardware__photo5:hover { 
+    background: url('../img/drill-h.png') no-repeat 50% 50%; 
+}
+
+.fardware__photo6:hover { 
+    background: url('../img/x-ray2-h.png') no-repeat 50% 50%; 
 }
 
 /* ------------------Наша команда профессионалов-------------- */
