@@ -1,5 +1,7 @@
 // Код всплывающего окна Заказать звонок
 
+
+
 $('.header__button').on('click', function() {
     $('.callback') .css ({'top': $(window).scrollTop() +100}).addClass('active');
   });
@@ -62,5 +64,24 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
           top: offsetPosition,
           behavior: 'smooth'
       });
+  });
+});
+
+$(function() {
+  //slick slider init
+  $('.js-reviews').slick({
+    speed: 600,
+    dots: true,
+    arrows: false
+  });
+
+
+
+  //fancybox init
+  $('[data-fancybox]').fancybox({
+    buttons: [
+      "zoom",
+      "close"
+    ],
   });
 });

@@ -15,7 +15,6 @@
     --gray-bgr: rgba(233, 238, 240, 1);
     --brown: rgba(92, 92, 92, 1);
     --grin-hover: rgba(125, 164, 186, 1);
-
 }
 
 * {
@@ -27,11 +26,10 @@
     box-sizing: border-box;
 }
 
-
 html {
     background-color: var(--gray-bgr);
+    overflow-x: hidden;
 }
-
 
 body {
     font-family: 'Marope', 'Arial', 'Helvetica', sans-serif;
@@ -40,6 +38,7 @@ body {
     color: var(--text-color);
     font-style: normal;
     line-height: 150%;
+    overflow-x: hidden;
 }
 
 a {
@@ -48,7 +47,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
@@ -86,9 +85,6 @@ a {
     background-color: var(--grin-hover);
 }
 
-
-
-
 /* блок верхний Стоматология */
 
 .page {
@@ -96,9 +92,10 @@ a {
 }
 
 .section-bgr {
-    height: 612px;
+    /* height: 612px; */
     background-color: var(--text-color-white);
     margin-top: 128px;
+    background-size: cover;
 }
 
 .header__row {
@@ -176,6 +173,7 @@ a {
     border-right:none;
     color: var(--coffee);
     cursor: pointer;
+    font-size: 14px;
 }
 
 .header__phone {
@@ -187,6 +185,7 @@ a {
     display:flex ;
     justify-content: space-around;
     margin-top: 50px;
+    padding-bottom: 120px;
 }
 
 .section__left {
@@ -213,6 +212,11 @@ a {
     margin-top: 49px;
 }
 
+.section__list-img img {
+    max-width: 100%;
+    height: auto;
+}
+
 .arrow {
     position: fixed;
     z-index: 9999;
@@ -224,7 +228,6 @@ a {
     color: transparent;
     padding: 10px;
     margin: 5px 15px 15px 5px;
-    
 }
 
 /* блок  Почему мы Более 10 лет.... */
@@ -234,10 +237,20 @@ a {
 }
 
 .about {
-    display:flex ;
-    justify-content: space-between;
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 70px;
 }
+
+.about__img {
+    display: block;
+    width: 100%;
+}
+/* .about__img {
+    flex: 2;
+} */
+
 
 .title {
     font-size: 48px;
@@ -246,6 +259,10 @@ a {
     margin-bottom: 0;
     display: inline-block;
 }
+
+/* .about__right {
+    flex: 1;
+} */
 
 .about__right-paragraph {
     margin-top: 20px;
@@ -267,7 +284,7 @@ a {
     font-size: 250px;
     font-weight: 800;
     color: var(--grin);
-    margin-top: 150px;
+    margin-top: 120px;
     display: block;
 }
 
@@ -285,7 +302,13 @@ a {
     margin-left: 70px;
 }
 
+.about__img img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* /*----------- Блок преимуществ------ */
+
 
 .merit__block-title {
     font-size: 24px;
@@ -295,9 +318,15 @@ a {
 
 .merit {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
     grid-row-gap: 40px;
-    grid-column-gap: 180px;
+    grid-column-gap: 80px;
+}
+.merit__block-img {
+    display: block;
+}
+.merit__block-paragraph {
+    display: block;
 }
 
 .merit-btn {
@@ -305,8 +334,9 @@ a {
     margin-top: 30px;
 }
 
-
 /* --------------Наши услуги--------------- */
+
+
 
 .services-title {
     margin-left: 400px;
@@ -334,8 +364,10 @@ a {
     display: flex;
     justify-content: space-around;
     background-color: var(--text-color-white);
-    width: 555px;
-    height: 320px;
+    /* width: 555px; */
+    background-size: cover;
+    /* height: 320px; */
+    padding-bottom: 30px;
 }   
 
 .services__block-title {
@@ -356,6 +388,23 @@ a {
     margin-top: 25px;
 }
 
+.services-btn {
+    width: 164px;
+    height: 42px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grin);
+    text-decoration: none ;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border: 1px solid rgba(106, 139, 158, 1);
+}
+
+.services-btn:hover {
+    box-shadow: 0 0 0 1px ;
+} 
 
 .first-color {
     background-color: var(--gray);
@@ -380,13 +429,22 @@ a {
     margin-left: 430px;
     display: inline-block;
     margin-top: 20px;
+}
 
+.prices__table {
+    height: 380px;
+    /* width: calc(100% - 10px); */
+    width: 100%;
 }
 
 /* ------------------------Блок Оборудование в нашей клинике------------------- */
 
 .text-coffee {
     color: var(--coffee);
+}
+
+.hardware {
+    padding-bottom: 120px;
 }
 
 .hardware__title {
@@ -410,61 +468,55 @@ a {
 
 .bgr-white {
     background-color: var(--text-color-white);
-    height: 960px;
+    /* height: 960px; */
+    background-size: cover;
 }
 
-.fardware__photo1 { 
-    background: url('../img/childrens.png') no-repeat 50% 50%;  
+.fardware__photo {
+    position: relative;
+    /* margin: 15px 0;
+    padding: 0 15px; */
+    cursor: pointer;
+    overflow: hidden;
+}
+.fardware__photo:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    content: ' ';
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+.fardware__photo:hover:before {
+    opacity: 1;
 }
 
-.fardware__photo2 {
-    background: url('../img/office1.png') no-repeat 50% 50%;  
+.fardware__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
 }
-
-.fardware__photo3 {
-    background: url('../img/office2.png') no-repeat 50% 50%;  
+.fardware-photo-text {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    z-index: 3;
 }
-
-.fardware__photo4 {
-    background: url('../img/x-ray1.png') no-repeat 50% 50%;  
-}
-
-.fardware__photo5 {
-    background: url('../img/drill-bit.png') no-repeat 50% 50%;  
-}
-
-.fardware__photo6 {
-    background: url('../img/x-ray2.png') no-repeat 50% 50%;  
-}
-
-.size-photo {
+.fardware-photo-text > p {
     display: block;
-    width: 365px; 
-    height: 265px; 
-}
-    
-.fardware__photo1:hover { 
-    background: url('../img/childrens-h.png') no-repeat 50% 50%; 
+    transform: translateY(105px);
+    transition: transform 0.4s ease;
 }
 
-.fardware__photo2:hover { 
-    background: url('../img/office1-h.png') no-repeat 50% 50%; 
-}
-
-.fardware__photo3:hover { 
-    background: url('../img/office2-h.png') no-repeat 50% 50%; 
-}
-
-.fardware__photo4:hover { 
-    background: url('../img/x-rau1-h.png') no-repeat 50% 50%; 
-}
-
-.fardware__photo5:hover { 
-    background: url('../img/drill-h.png') no-repeat 50% 50%; 
-}
-
-.fardware__photo6:hover { 
-    background: url('../img/x-ray2-h.png') no-repeat 50% 50%; 
+.fardware__photo:hover .fardware-photo-text > p {
+    transform: translateY(0);
 }
 
 /* ------------------Наша команда профессионалов-------------- */
@@ -498,6 +550,11 @@ a {
     margin: 0;
 }
 
+.figure img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ------------------Отзывы клиентов-------------------- */
 
 .bgr-grin {
@@ -509,7 +566,6 @@ a {
     margin-left: 350px;
     margin-top: 100px;
 }
-
 
 .dark-green {
     background-color: rgba(62, 78, 87, 1);
@@ -523,37 +579,106 @@ a {
 .reviews__content {
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 320px;
+    
+}
+.reviews__slide-content {
+   width: 50%;
+   margin-right: 60px; 
 }
 
-.reviews__content-card {
-    width: 469px;
-    height: 306px;
+.reviews__slide-card {
+    width: 100%;
     background-color: var(--text-color-white);
     margin-left: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
 }
 
 .text-dark-green {
     color: rgba(62, 78, 87, 1);
 }
 
-.reviews__content-title {
+.reviews__slide-title {
     border-bottom: solid 1px rgba(201, 201, 201, 1);
     display: inline-block;
 }
 
+.slick-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 76px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -70px;
+    left: 460px;
+}
 
 
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-color: var(--text-color-white);
+    padding: 0;
+    border: none;
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(62, 78, 87, 1); ;
+}
+
+/* ----------------------Футер---------------- */
+
+.footer {
+    background-color: var(--dark-green);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 53px;
+}
+
+.footer__paragraph {
+    font-size: 14px;
+}
+
+.footer__social {
+    flex-grow: 1;
+    margin-left: 200px;
+    
+}
+
+.footer__link {
+    margin-right: 22px;
+    
+}
+
+.footer__social a {
+    text-decoration: none;
+}
 
 
 /* ----------------------Всплывающее окно Заказать звонок----------------- */
 
 .popup {
-    width: 600px;
+    width: 600px; 
+    
     border-radius: 5px;    
-    max-width: 100%;
+    /* max-width: 100%; */
     background: var(--gray);
     padding: 60px 90px;
     position: relative;
@@ -573,13 +698,13 @@ a {
     /* background-color: rgba(0, 0, 0, 0.6); */
 }
 
-
-
 .popup h2 {
     font-size: 30px
-    
 }
 
+.popup p {
+    font-size: 20px;
+}
 
 
 .popup form {
@@ -591,11 +716,13 @@ a {
     margin: 0 auto 15px; 
     padding: 15px 10px;
     border: none;
-    width: 420px;
+    /* width: 420px; */
+    width: 100%;
 }
 
 .form-btn {
-    width: 260px;
+    /* width: 260px; */
+    width: 100%;
     height: 50px;
     display: inline-flex;
     justify-content: center;
@@ -606,7 +733,8 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    width: 420px;
+    /* width: 420px; */
+    width: 100%;
     border: none;
 }
 
@@ -641,7 +769,6 @@ a {
 
 .question__content {
     display: flex;
-    justify-content: center;
 }
 
 .tetx-regular {
@@ -650,7 +777,6 @@ a {
 }
 
 .question__paragraph{
-    
     margin-top: 20px;
 }
 
@@ -658,21 +784,20 @@ a {
     margin-left: 0;
 }
 
-
 .question__form {
-    width: 555px;
+    height: auto; 
     padding: 60px 90px;
     background: var(--text-color-white);
     margin-right: 30px;
+    max-width: 100%;
 }
-
 
 .question__form input {
     display: block;
     margin: 0 auto 30px; 
     padding: 15px 10px;
     border: 1px solid rgba(201, 201, 201, 1);
-    width: 375px;
+    width: 100%; 
 }
 
 .question__form textarea {
@@ -680,7 +805,7 @@ a {
     margin: 0 auto 30px; 
     padding: 15px 10px;
     border: 1px solid rgba(201, 201, 201, 1);
-    width: 375px;
+    width: 100%;
     height: 90px;
     overflow:auto;
 }
@@ -691,6 +816,11 @@ a {
 
 iframe {
     filter: grayscale(100%);
+}
+
+.question__img img {
+    min-width: 100%;
+    height: 550px; 
 }
 
 /* ----------------------Футер---------------- */
@@ -712,17 +842,418 @@ iframe {
 .footer__social {
     flex-grow: 1;
     margin-left: 200px;
-    
 }
 
 .footer__link {
     margin-right: 22px;
-    
 }
 
 .footer__social a {
     text-decoration: none;
 }
+
+  
+@media screen and (max-width: 1140px){
+   .section-bgr {
+       height: 520px;
+       /* width: calc(100% - 20px) ; */
+   }
+   .header__logo {
+       margin-left: 50px;
+   }
+   .section__left-title {
+       font-size: 48px;
+   }
+   .section__list-img {
+       width: 100%;
+       height: 100%;
+       margin-left: 80px;
+   }
+    .title {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    .large {
+        font-size: 22px;
+    }
+
+    .about__right {
+        margin-left: 20px;
+    }
+   
+    .about__right-span {
+        font-size: 144px;
+        margin-top: 100px;
+    }
+    
+    
+
+    .medium {
+        font-size: 20px;
+    }
+    .about__right-bottom {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .merit {
+        grid-column-gap: 40px;
+    }
+    .merit-btn {
+        margin-left: 355px;
+    }
+    .services-title {
+        margin-left: 380px;
+    }
+    .border {
+        margin-left: 430px;
+    }
+    .services-title {
+        margin-top: 40px;
+    }
+    .prices__title {
+        margin-top: 40px;
+        margin-left: 340px;
+    }
+    .prices__paragraph {
+        margin-left: 400px;
+    }
+    .bgr-white {
+        /* height: 1200px; */
+    }
+    .fardware__photos {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .hardware__title {
+        margin-left: 340px;
+    }
+
+    .hardware__paragraph {
+        margin-left: 310px;
+    }
+    .doctors__photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 90px;
+        margin-right: 90px;
+        grid-column-gap: 0;
+    }
+    .doctors__title {
+        margin-left: 350px;
+    }
+    .doctors__paragraph {
+        margin-left: 380px;
+    }
+    .slick-slide img {
+        width: 100%;
+    }
+    .question {
+        margin-bottom: 100px;
+    }
+
+    .question__border {
+        margin-left: 0;
+    }
+
+    .reviews__title {
+        margin-left: 330px;
+    }
+    .reviews__paragraph {
+        margin-left: 400px;
+    }
+    .reviews__slide {
+         margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .section {
+        margin-top: 40px;
+    }
+    .header__nav {
+        display: none; 
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 100px;
+        margin-left: 0;
+        z-index: 1;
+    }
+    .header__logo {
+        background: url('../img/menu.svg') no-repeat left center;
+        padding-left: 65px;
+    }
+    .title {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .large {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .about__right-span {
+        margin-top: 60px;
+    }
+    .about__right-bottom {
+        margin-top: 20px;
+    }
+    .medium {
+        font-size: 16px;
+        margin: 0;
+    }
+    .merit {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 90px;
+    }
+    .merit-btn {
+        margin-left: 235px;
+    }
+    .merit__block-title {
+        font-size: 20px;
+    }
+
+    .block-title {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+     .xx-small {
+        font-size: 14px;
+    }  
+    .bgr-white {
+        /* height: 1100px; */
+    }
+    .services__block {
+        grid-template-columns: none;
+        grid-row-gap: 30px;
+    }
+    .border {
+        margin-left: 300px;
+    }
+    .services-title {
+        margin-left: 260px;
+    }
+    .prices__title {
+        margin-left: 230px;
+    }
+    .prices__paragraph {
+        margin-left: 295px;
+    }
+    .fardware__photos {
+         margin-left: 0; 
+         margin-right: 0;
+    }
+    .hardware__title {
+        margin-left: 225px;
+    }
+    .hardware__paragraph {
+        margin-left: 220px;
+    }
+    .doctors__title {
+        margin-left: 250px;
+    }
+    .doctors__paragraph {
+        margin-left: 285px;
+    }
+    .doctors__photos {
+        margin-left: 0px;
+        margin-right: 0px; 
+        grid-column-gap: 25px;
+    }
+    .text-bold {
+        font-size: 14px;
+    }
+    .reviews__title {
+        margin-left: 230px;
+    }
+    .reviews__paragraph {
+        margin-left: 295px;
+    }
+    .slick-dots {
+        left: 310px;
+    }
+    .bgr-grin {
+        height: 543px;
+    }
+    .question__border {
+        margin-left: 0;
+    }
+    .question__img img {
+        display: none;
+    }
+    .footer__social {
+        margin-top: 15px;
+    }
+
+} 
+@media screen and (max-width: 768px){
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section-bgr {
+        height: 660px;
+    }
+    .header__button {
+        text-indent: -9999px;
+        border: none;
+    }
+    .header__logo {
+        padding-left: 50px;
+    }
+    
+    .header__logo {
+        margin-left: 5px;
+    }
+    .header__right {
+        margin-top: 10px;
+        display: block;
+        margin-right: 0;
+    }
+    .header__nav {
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .header__nav-list {
+        display: block;
+        background-color: var(--text-color-white);
+    }
+        
+    .section__list-img {
+         margin-left: 0px;
+    }
+   
+    .section__list {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section__left {
+        margin-left: 20px;
+    }
+    .section__left-title {
+        font-size: 30px;
+    }
+    .sectioh__left-paragraph {
+        font-size: 16px;
+    }
+    .sectioh__left-btn {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .about {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        margin-top: 10px;
+    }
+    .merit {
+        grid-template-columns: 1fr;
+    } 
+    .merit-btn {
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    
+    }
+    .services__block-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .services-title {
+        margin-left: 0px;
+    }
+    .border {
+        display: none;
+    }
+    .services__block {
+        margin-top: 0;
+        grid-row-gap: 20px;
+    }
+    .services__block-title {
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    .services__block-img {
+        display: none;
+    }
+    .services__block-content {
+        margin-left: 220px;
+        margin-right: 250px;
+    }
+    .prices__table {
+        height: auto;
+    }
+    .xx-small {
+        margin-top: 0;
+    }
+    .prices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prices__title {
+        margin-left: 0;
+    }
+    .prices__paragraph {
+        margin-left: 0;
+    }
+    .xxx-small {
+        font-size: 12px;
+    }
+    .hardware {
+        padding-bottom: 5px;
+    }
+    .fardware__photos {
+        grid-template-columns: 1fr;
+    }
+    .fardware-photo-text {
+        font-size: 16px;
+        top: 100px;
+    }
+
+    .reviews__content {
+        display: none;
+    }
+
+
+
+    .popup {
+        padding: 30px 15px;
+        width: 100%;
+        /* margin-left: 20px; */
+        /* margin-right: 20px; */
+    }
+    .popup h2 {
+        font-size: 20px
+    }
+    .popup p {
+        font-size: 16px;
+    }
+
+    
+ 
+} 
 
 
 
