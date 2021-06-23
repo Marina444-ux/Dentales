@@ -442,7 +442,7 @@ a {
     padding-bottom: 120px;
 }
 
-.hardware__content {
+.hardware__text {
     text-align: center;
 }
 
@@ -518,7 +518,7 @@ a {
 }
 
 /* ------------------Наша команда профессионалов-------------- */
-.doctors__content {
+.doctors__text {
     text-align: center;
 }
 
@@ -564,7 +564,7 @@ a {
     /* height: 723px; */
 }
 
-.reviews__slider-content {
+.reviews__slider-text {
     text-align: center;
     padding-top: 90px;
 }
@@ -1052,9 +1052,6 @@ iframe {
     .hardware__paragraph {
         margin-left: 220px;
     }
-    .doctors__content {
-        text-align: center;
-    }
     .doctors__title {
         margin-left: 250px;
     }
@@ -1218,8 +1215,9 @@ iframe {
     .prices__title {
         margin-left: 0;
     }
-    .prices__paragraph {
-        margin-left: 0;
+    .prices__title div {
+        font-size: 18px; 
+        margin-top: 5px;
     }
     .xxx-small {
         font-size: 12px;
@@ -1236,8 +1234,9 @@ iframe {
     .hardware__title-span {
         font-size: 24px;
     }
-    .hardware__paragraph {
-        margin-left: 0;
+    .hardware__title div {
+        font-size: 18px; 
+        margin-top: 5px;
     }
     .fardware__photos {
         grid-template-columns: 1fr;
@@ -1246,8 +1245,9 @@ iframe {
         font-size: 16px;
         top: 100px;
     }
-    .doctors__title {
-        margin-left: 0;
+    .doctors__title div {
+        font-size: 18px; 
+        margin-top: 5px;
     }
     .doctors__paragraph {
         margin-left: 0;
