@@ -247,9 +247,6 @@ a {
     display: block;
     width: 100%;
 }
-/* .about__img {
-    flex: 2;
-} */
 
 
 .title {
@@ -259,10 +256,6 @@ a {
     margin-bottom: 0;
     display: inline-block;
 }
-
-/* .about__right {
-    flex: 1;
-} */
 
 .about__right-paragraph {
     margin-top: 20px;
@@ -307,7 +300,7 @@ a {
     height: auto;
 }
 
-/* /*----------- Блок преимуществ------ */
+ /*----------- Блок преимуществ------ */
 
 
 .merit__block-title {
@@ -337,7 +330,9 @@ a {
 /* --------------Наши услуги--------------- */
 
 
-
+.services__text {
+    text-align: center;
+}
 .services-title {
     margin-left: 400px;
     margin-bottom: 50px;
@@ -349,7 +344,8 @@ a {
     height: 2px;
     background-color: var(--grin);
     margin-left: 510px;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .services__block {
@@ -364,9 +360,7 @@ a {
     display: flex;
     justify-content: space-around;
     background-color: var(--text-color-white);
-    /* width: 555px; */
     background-size: cover;
-    /* height: 320px; */
     padding-bottom: 30px;
 }   
 
@@ -378,7 +372,6 @@ a {
 .services__paragraph {
     margin-bottom: 35px;
 }
-
 
 .services__block-img {
     margin-top: 110px;
@@ -419,21 +412,23 @@ a {
 }
 
 /* ---------------------Стоимость услуг----------------- */
-
+.prices__text {
+    text-align: center;
+}
 .prices__title {
-    margin-left: 360px;
+
     margin-top: 120px;
 }
 
-.prices__paragraph {
-    margin-left: 430px;
+.prices__title div{
+    font-weight: 500;
     display: inline-block;
     margin-top: 20px;
+    font-size: 36px;
 }
 
 .prices__table {
     height: 380px;
-    /* width: calc(100% - 10px); */
     width: 100%;
 }
 
@@ -447,15 +442,21 @@ a {
     padding-bottom: 120px;
 }
 
+.hardware__content {
+    text-align: center;
+}
+
 .hardware__title {
-    margin-left: 380px;
+    
     margin-top: 120px ;
 }
 
-.hardware__paragraph {
-    margin-left: 280px;
+.hardware__title div {
+    font-weight: 500;
     display: inline-block;
     margin-top: 20px;
+    font-size: 36px;
+    
 }
 
 .fardware__photos {
@@ -468,14 +469,11 @@ a {
 
 .bgr-white {
     background-color: var(--text-color-white);
-    /* height: 960px; */
     background-size: cover;
 }
 
 .fardware__photo {
     position: relative;
-    /* margin: 15px 0;
-    padding: 0 15px; */
     cursor: pointer;
     overflow: hidden;
 }
@@ -520,14 +518,16 @@ a {
 }
 
 /* ------------------Наша команда профессионалов-------------- */
-.doctors__title {
-    margin-left: 400px;
+.doctors__content {
+    text-align: center;
 }
 
-.doctors__paragraph {
-    margin-left: 420px;
+.doctors__title div {
+    font-weight: 500;
     display: inline-block;
     margin-top: 20px;
+    font-size: 36px;
+    
 }
 
 .doctors__photos {
@@ -559,33 +559,39 @@ a {
 
 .bgr-grin {
     background-color: var(--dark-green);
-    height: 723px;
+    background-size: cover;
+    padding-bottom: 140px;
+    /* height: 723px; */
 }
 
-.reviews__title {
-    margin-left: 350px;
-    margin-top: 100px;
+.reviews__slider-content {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.reviews__title div {
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 36px;
+    color: var(--text-color-white);
+    
 }
 
 .dark-green {
     background-color: rgba(62, 78, 87, 1);
 }
 
-.reviews__paragraph {
-    margin-left: 450px;
-    margin-top: 20px;
-    display: inline-block;
-}
 .reviews__content {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 320px;
+    height: 100%px;
     
 }
 .reviews__slide-content {
-   width: 50%;
-   margin-right: 60px; 
+    width: 50%;
+    margin-right: 60px; 
 }
 
 .reviews__slide-card {
@@ -620,9 +626,8 @@ a {
     justify-content: space-between;
     position: absolute;
     bottom: -70px;
-    left: 460px;
+    left: 530px;
 }
-
 
 .slick-dots li button {
     width: 12px;
@@ -721,7 +726,6 @@ a {
 }
 
 .form-btn {
-    /* width: 260px; */
     width: 100%;
     height: 50px;
     display: inline-flex;
@@ -733,14 +737,12 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    /* width: 420px; */
     width: 100%;
     border: none;
 }
 
 .text {
     height: 200px;
-
 }
 
 .popups__inner.active {
@@ -776,8 +778,11 @@ a {
     font-size: 18px;
 }
 
-.question__paragraph{
+.question__title div{
+    font-weight: 500;
+    display: inline-block;
     margin-top: 20px;
+    font-size: 36px;
 }
 
 .question__border {
@@ -854,12 +859,11 @@ iframe {
 
   
 @media screen and (max-width: 1140px){
-   .section-bgr {
-       height: 520px;
-       /* width: calc(100% - 20px) ; */
+    .section-bgr {
+    height: 520px;
    }
    .header__logo {
-       margin-left: 50px;
+        margin-left: 50px;
    }
    .section__left-title {
        font-size: 48px;
@@ -886,8 +890,6 @@ iframe {
         margin-top: 100px;
     }
     
-    
-
     .medium {
         font-size: 20px;
     }
@@ -917,9 +919,7 @@ iframe {
     .prices__paragraph {
         margin-left: 400px;
     }
-    .bgr-white {
-        /* height: 1200px; */
-    }
+
     .fardware__photos {
         grid-template-columns: 1fr 1fr;
         margin-left: 90px;
@@ -1008,6 +1008,7 @@ iframe {
     .merit {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 90px;
+        margin-left: 10px;
     }
     .merit-btn {
         margin-left: 235px;
@@ -1024,9 +1025,7 @@ iframe {
      .xx-small {
         font-size: 14px;
     }  
-    .bgr-white {
-        /* height: 1100px; */
-    }
+    
     .services__block {
         grid-template-columns: none;
         grid-row-gap: 30px;
@@ -1044,14 +1043,17 @@ iframe {
         margin-left: 295px;
     }
     .fardware__photos {
-         margin-left: 0; 
-         margin-right: 0;
+        margin-left: 0; 
+        margin-right: 0;
     }
     .hardware__title {
         margin-left: 225px;
     }
     .hardware__paragraph {
         margin-left: 220px;
+    }
+    .doctors__content {
+        text-align: center;
     }
     .doctors__title {
         margin-left: 250px;
@@ -1073,12 +1075,6 @@ iframe {
     .reviews__paragraph {
         margin-left: 295px;
     }
-    .slick-dots {
-        left: 310px;
-    }
-    .bgr-grin {
-        height: 543px;
-    }
     .question__border {
         margin-left: 0;
     }
@@ -1096,7 +1092,7 @@ iframe {
         padding-right: 15px;
     }
     .section-bgr {
-        height: 660px;
+    height: auto;
     }
     .header__button {
         text-indent: -9999px;
@@ -1121,11 +1117,17 @@ iframe {
         display: block;
         background-color: var(--text-color-white);
     }
+    .section__list {
+        padding-bottom: 40px;
+    }
         
     .section__list-img {
-         margin-left: 0px;
+        margin-left: 0px;
+        
     }
-   
+    .section__list-img img {
+        width: 100%;
+    }
     .section__list {
         flex-direction: column-reverse;
         margin-top: 10px;
@@ -1155,6 +1157,10 @@ iframe {
     }
     .title {
         margin-top: 10px;
+        font-size: 26px;
+    }
+    .hardware__title {
+        margin-left: 0;
     }
     .merit {
         grid-template-columns: 1fr;
@@ -1169,7 +1175,6 @@ iframe {
         justify-content: center;
         align-items: center;
         padding-top: 30px;
-    
     }
     .services__block-item {
         display: flex;
@@ -1177,8 +1182,6 @@ iframe {
         justify-content: center;
         align-items: center;
     }
-    
-    
     .services-title {
         margin-left: 0px;
     }
@@ -1224,6 +1227,18 @@ iframe {
     .hardware {
         padding-bottom: 5px;
     }
+    .hardware__content {
+        margin-top: 20px;
+    }
+    .hardware__title {
+        margin-top: 30px;
+    }
+    .hardware__title-span {
+        font-size: 24px;
+    }
+    .hardware__paragraph {
+        margin-left: 0;
+    }
     .fardware__photos {
         grid-template-columns: 1fr;
     }
@@ -1231,10 +1246,95 @@ iframe {
         font-size: 16px;
         top: 100px;
     }
+    .doctors__title {
+        margin-left: 0;
+    }
+    .doctors__paragraph {
+        margin-left: 0;
+    }
+    .doctors__photos {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+    .doctors__photo {
+        margin-top: 10px;
+    }
+    .figure figcaption {
+        font-size: 14px;
+    }
+    .text-bold {
+        font-size: 13px;
+    }
+   
 
     .reviews__content {
-        display: none;
+        display: block;
     }
+    .reviews__slider-content {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .reviews__slide-content {
+        width: 100%;
+        margin-right: 0px;
+        padding: 10px; 
+     }
+     .reviews__title {
+        margin: 0;
+        margin-top: 30px;
+     }
+     .reviews__paragraph {
+         margin: 0;
+     }
+    .reviews__slide-content p {
+        
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .reviews__slide-card {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .slick-dots {
+        bottom: -20px;
+        left: 0;
+        margin-left: 100px;
+    }
+    .question {
+        margin-bottom: 60px;
+    }
+    .question__form {
+        padding: 30px 10px;
+        margin-right: 0;
+        width: 100%;
+    }
+    .tetx-regular {
+        font-size: 16px;
+    }
+    .question__form input {
+        font-size: 14px;
+    }
+    .question__form textarea {
+        font-size: 14px;
+    }
+    .footer__social {
+        margin-left: 20px;
+    }
+    .footer__content {
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footer__contacts p {
+        font-size: 13px;
+    }
+
+
+    
+    
 
 
 
@@ -1252,7 +1352,15 @@ iframe {
     }
 
     
- 
+    .reviews__content {
+        display: block;
+    }
+    .bgr-grin {
+        padding-bottom: 60px;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
 } 
 
 
