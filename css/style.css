@@ -910,7 +910,7 @@ iframe {
     }
     .prices__title {
         margin-top: 40px;
-        margin-left: 340px;
+    
     }
     .prices__paragraph {
         margin-left: 400px;
@@ -1016,9 +1016,6 @@ iframe {
     .services-title {
         margin-left: 260px;
     }
-    .prices__title {
-        margin-left: 230px;
-    }
     .prices__paragraph {
         margin-left: 295px;
     }
@@ -1026,9 +1023,7 @@ iframe {
         margin-left: 0; 
         margin-right: 0;
     }
-    .hardware__title {
-        /* margin-left: 225px; */
-    }
+    
     .hardware__paragraph {
         margin-left: 220px;
     }
