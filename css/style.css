@@ -561,7 +561,6 @@ a {
     background-color: var(--dark-green);
     background-size: cover;
     padding-bottom: 140px;
-    /* height: 723px; */
 }
 
 .reviews__slider-text {
@@ -880,16 +879,13 @@ iframe {
     .large {
         font-size: 22px;
     }
-
     .about__right {
         margin-left: 20px;
     }
-   
     .about__right-span {
         font-size: 144px;
         margin-top: 100px;
     }
-    
     .medium {
         font-size: 20px;
     }
@@ -919,17 +915,11 @@ iframe {
     .prices__paragraph {
         margin-left: 400px;
     }
-
     .fardware__photos {
         grid-template-columns: 1fr 1fr;
         margin-left: 90px;
         margin-right: 90px;
     }
-
-    .hardware__title {
-        margin-left: 340px;
-    }
-
     .hardware__paragraph {
         margin-left: 310px;
     }
@@ -940,9 +930,6 @@ iframe {
         margin-right: 90px;
         grid-column-gap: 0;
     }
-    .doctors__title {
-        margin-left: 350px;
-    }
     .doctors__paragraph {
         margin-left: 380px;
     }
@@ -952,19 +939,14 @@ iframe {
     .question {
         margin-bottom: 100px;
     }
-
     .question__border {
         margin-left: 0;
-    }
-
-    .reviews__title {
-        margin-left: 330px;
     }
     .reviews__paragraph {
         margin-left: 400px;
     }
     .reviews__slide {
-         margin-left: 0;
+        margin-left: 0;
     }
 
 }
@@ -1016,13 +998,11 @@ iframe {
     .merit__block-title {
         font-size: 20px;
     }
-
     .block-title {
         margin-bottom: 0px;
         margin-top: 0px;
     }
-
-     .xx-small {
+    .xx-small {
         font-size: 14px;
     }  
     
@@ -1047,13 +1027,10 @@ iframe {
         margin-right: 0;
     }
     .hardware__title {
-        margin-left: 225px;
+        /* margin-left: 225px; */
     }
     .hardware__paragraph {
         margin-left: 220px;
-    }
-    .doctors__title {
-        margin-left: 250px;
     }
     .doctors__paragraph {
         margin-left: 285px;
@@ -1156,9 +1133,6 @@ iframe {
         margin-top: 10px;
         font-size: 26px;
     }
-    .hardware__title {
-        margin-left: 0;
-    }
     .merit {
         grid-template-columns: 1fr;
     } 
@@ -1178,9 +1152,6 @@ iframe {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .services-title {
-        margin-left: 0px;
     }
     .border {
         display: none;
@@ -1211,9 +1182,6 @@ iframe {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .prices__title {
-        margin-left: 0;
     }
     .prices__title div {
         font-size: 18px; 
@@ -1265,8 +1233,6 @@ iframe {
     .text-bold {
         font-size: 13px;
     }
-   
-
     .reviews__content {
         display: block;
     }
@@ -1341,8 +1307,6 @@ iframe {
     .popup {
         padding: 30px 15px;
         width: 100%;
-        /* margin-left: 20px; */
-        /* margin-right: 20px; */
     }
     .popup h2 {
         font-size: 20px
