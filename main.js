@@ -85,3 +85,9 @@ $(function() {
     ],
   });
 });
+
+$(function() {
+  $('.header__logo').click(function() {
+    $('.header__nav').slideToggle();
+  });
+});

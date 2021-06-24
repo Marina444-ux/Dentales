@@ -221,13 +221,10 @@ a {
     position: fixed;
     z-index: 9999;
     bottom: 5%;
-    right: 10%;
+    right: 6%;
     height: 64px;
-    width: 64px;
     opacity: .6;
     color: transparent;
-    padding: 10px;
-    margin: 5px 15px 15px 5px;
 }
 
 /* блок  Почему мы Более 10 лет.... */
@@ -326,6 +323,7 @@ a {
     grid-template-columns: 30% 30% 30%;
     grid-row-gap: 40px;
     grid-column-gap: 80px;
+    
 }
 .merit__block-img {
     display: block;
@@ -350,7 +348,6 @@ a {
     margin-bottom: 50px;
     margin-top: 120px;
 }
-
 .border {
     width: 100px;
     height: 2px;
@@ -373,7 +370,7 @@ a {
     justify-content: space-around;
     background-color: var(--text-color-white);
     background-size: cover;
-    padding-bottom: 30px;
+    padding: 30px;
 }   
 
 .services__block-title {
@@ -832,7 +829,7 @@ iframe {
 
 .question__img img {
     min-width: 100%;
-    height: 550px; 
+    height: 100%; 
 }
 
 /* ----------------------Футер---------------- */
@@ -1059,6 +1056,9 @@ iframe {
     }
 } 
 @media screen and (max-width: 768px){
+    .section {
+        align-items: center;
+    }
     .container {
         padding-left: 15px;
         padding-right: 15px;
@@ -1134,6 +1134,7 @@ iframe {
     }
     .merit {
         grid-template-columns: 1fr;
+        justify-items: center;
     } 
     .merit-btn {
         margin-left: 0px;
