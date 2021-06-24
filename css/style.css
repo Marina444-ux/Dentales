@@ -257,7 +257,7 @@ a {
     display: inline-block;
 }
 
-.about__right-paragraph {
+.title div {
     margin-top: 20px;
 }
 
@@ -265,8 +265,13 @@ a {
     color: var(--grin);
 }
 
+.text {
+    color: var(--text-color);
+}
+
 .large {
     font-size: 36px;
+    font-weight: 500;
 }
 
 .text-white {
@@ -283,11 +288,18 @@ a {
 
 .medium {
     font-size: 30px;
+    margin-top: 55px;
+    margin-left: 60px;
 }
+
 
 .text-size {
     color: var(--text-color-white);
     margin-top: 0;
+}
+
+.medium span {
+    margin-top: 20px;
 }
 
 .about__right-bottom {
@@ -680,10 +692,8 @@ a {
 
 .popup {
     width: 600px; 
-    
     border-radius: 5px;    
-    /* max-width: 100%; */
-    background: var(--gray);
+    background: rgba(181, 203, 216, 1);
     padding: 60px 90px;
     position: relative;
     margin: 0 auto;
@@ -699,7 +709,6 @@ a {
     align-items: center; 
     z-index: 2;
     display: none; 
-    /* background-color: rgba(0, 0, 0, 0.6); */
 }
 
 .popup h2 {
@@ -720,7 +729,6 @@ a {
     margin: 0 auto 15px; 
     padding: 15px 10px;
     border: none;
-    /* width: 420px; */
     width: 100%;
 }
 
@@ -847,7 +855,6 @@ iframe {
     flex-grow: 1;
     margin-left: 200px;
 }
-
 .footer__link {
     margin-right: 22px;
 }
@@ -855,8 +862,6 @@ iframe {
 .footer__social a {
     text-decoration: none;
 }
-
-  
 @media screen and (max-width: 1140px){
     .section-bgr {
     height: 520px;
@@ -874,7 +879,7 @@ iframe {
    }
     .title {
         font-size: 36px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .large {
         font-size: 22px;
@@ -884,10 +889,12 @@ iframe {
     }
     .about__right-span {
         font-size: 144px;
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .medium {
         font-size: 20px;
+        margin-top: 19px;
+        margin-left: 40px;
     }
     .about__right-bottom {
         margin-left: 30px;
@@ -910,7 +917,6 @@ iframe {
     }
     .prices__title {
         margin-top: 40px;
-    
     }
     .prices__paragraph {
         margin-left: 400px;
@@ -948,9 +954,7 @@ iframe {
     .reviews__slide {
         margin-left: 0;
     }
-
 }
-
 @media screen and (max-width: 1000px){
     .section {
         margin-top: 40px;
@@ -974,7 +978,7 @@ iframe {
         margin-top: 50px;
     }
     .large {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 5px;
     }
     .about__right-span {
@@ -984,8 +988,8 @@ iframe {
         margin-top: 20px;
     }
     .medium {
-        font-size: 16px;
-        margin: 0;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     .merit {
         grid-template-columns: 1fr 1fr;
@@ -1053,7 +1057,6 @@ iframe {
     .footer__social {
         margin-top: 15px;
     }
-
 } 
 @media screen and (max-width: 768px){
     .container {
@@ -1127,6 +1130,7 @@ iframe {
     .title {
         margin-top: 10px;
         font-size: 26px;
+        margin-bottom: 10px;
     }
     .merit {
         grid-template-columns: 1fr;
@@ -1208,6 +1212,9 @@ iframe {
         font-size: 16px;
         top: 100px;
     }
+    .doctors {
+        align-items: center;
+    }
     .doctors__title div {
         font-size: 18px; 
         margin-top: 5px;
@@ -1222,6 +1229,9 @@ iframe {
     .doctors__photo {
         margin-top: 10px;
     }
+    .figure img {
+        width: 100%;
+    }
     .figure figcaption {
         font-size: 14px;
     }
@@ -1231,6 +1241,12 @@ iframe {
     .reviews__content {
         display: block;
     }
+    .bgr-grin {
+        padding-bottom: 60px;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .reviews__slider-content {
         margin-top: 30px;
         margin-bottom: 20px;
@@ -1239,14 +1255,19 @@ iframe {
         width: 100%;
         margin-right: 0px;
         padding: 10px; 
-     }
-     .reviews__title {
+    }
+    .reviews__title {
         margin: 0;
         margin-top: 30px;
-     }
-     .reviews__paragraph {
-         margin: 0;
-     }
+    }
+    .reviews__title div {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .reviews__paragraph {
+        margin: 0;
+    }
     .reviews__slide-content p {
         
         font-size: 14px;
@@ -1267,6 +1288,12 @@ iframe {
     .question {
         margin-bottom: 60px;
     }
+    .question__title div {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
     .question__form {
         padding: 30px 10px;
         margin-right: 0;
@@ -1293,12 +1320,6 @@ iframe {
         font-size: 13px;
     }
 
-
-    
-    
-
-
-
     .popup {
         padding: 30px 15px;
         width: 100%;
@@ -1309,18 +1330,13 @@ iframe {
     .popup p {
         font-size: 16px;
     }
-
-    
-    .reviews__content {
-        display: block;
+    .popup form label {
+        font-size: 14px;
     }
-    .bgr-grin {
-        padding-bottom: 60px;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
+    .submitt {
+        width: 100%;
     }
-} 
+}
 
 
 
