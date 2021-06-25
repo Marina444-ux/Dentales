@@ -777,7 +777,8 @@ iframe {
     justify-content: center; 
     align-items: center; 
     z-index: 2;
-    display: none; 
+    display: none;
+    background: rgba(0,0,0,.7);
 }
 
 .popup h2 {
@@ -1027,7 +1028,12 @@ iframe {
     .footer__social {
         margin-top: 15px;
     }
-} 
+}
+
+/* @media screen and (max-width: 768px){
+
+} */
+
 @media screen and (max-width: 768px){
     .section {
         align-items: center;
@@ -1230,6 +1236,10 @@ iframe {
         margin-right: 0px;
         padding: 10px; 
     }
+    .reviews__slider-text {
+        text-align: center;
+        padding-top: 20px;
+    }
     .reviews__title {
         margin: 0;
         margin-top: 30px;
@@ -1292,17 +1302,30 @@ iframe {
     .footer__contacts p {
         font-size: 13px;
     }
-
     .popup {
-        padding: 30px 15px;
-        width: 100%;
+        padding: 10px 15px;
+        width: 80%;
+    }
+    .close__popup {
+        font-size: 30px;
     }
     .popup h2 {
         font-size: 20px
     }
     .popup p {
-        font-size: 16px;
+        display: none;
     }
+    .popup form {
+        margin-top: 0;
+    }
+    .popup input {
+        margin: 0;
+        padding: 10px 10px;
+    }
+    .form-btn {
+        margin-top: 20px;
+        height: 40px;
+    } 
     .popup form label {
         font-size: 14px;
     }

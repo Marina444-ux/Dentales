@@ -22,7 +22,7 @@ $('.header__button').on('click', function() {
   });
 
   $('.sectioh__left-btn').on('click', function() {
-    $('.consult') .css ({'top': $(window).scrollTop() +100}).addClass('active');
+    $('.consult').addClass('active');
   });
   
   $('.close__popup').on('click', function() {
