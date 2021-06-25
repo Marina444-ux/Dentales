@@ -91,3 +91,18 @@ $(function() {
     $('.header__nav').slideToggle();
   });
 });
+
+
+// let inputs = document.querySelectorAll('input[type = "phone"]');
+// let im = new Inputmask ('+7 (999) 999-99-99');
+// im.mask (inputs);
+
+// --------------Mаски ввода телефона и е-mail
+
+$(document).ready(function() {
+  $("#phone").mask("+7 (999) 999-99-99");
+});
+
+$(document).ready(function() {   
+  $("#e-mail").inputmask("email");
+});
