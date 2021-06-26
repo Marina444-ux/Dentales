@@ -26,6 +26,7 @@
                             <li class="header__nav-item text-bold"> <a href="#servic">Наши услуги</a></li>
                             <li class="header__nav-item text-bold"> <a href="#doctors">Врачи</a></li>
                             <li class="header__nav-item text-bold"> <a href="#reviews">Отзывы</a></li>
+                            <li class="header__nav-item text-bold"> <a href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header__right">
@@ -434,9 +435,10 @@
                 <div class="question__content">
                     <div class="question__form">
                         <h3 class="tetx-regular">Задайте свой вопрос и мы свяжемся<br> с Вами в ближайшее время</h3>
-                        <form name="form" action="/" method="post"> 
-                            <input type="text" name="first_name" placeholder="Введите имя" required  minlength="3">
-                            <input type="email"  id="e-mail" name="name" placeholder="Введите email" required >
+                        <form name="form"  >
+                            <input type="hidden" name="title" value="Задайте свой вопрос">
+                            <input type="text" name="name" placeholder="Введите ФИО" required  minlength="3">
+                            <input type="email"  id="e-mail" name="mail" placeholder="Введите email" required >
                             <textarea name="message"  placeholder="Введите сообщение" required ></textarea> 
                             <button class="btn bgr-coffee" type="submit">Отправить</button>
                         </form>
@@ -452,16 +454,21 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__content text-size">
+            <div id="footer" class="footer__content text-size">
                 <div class="footer__logo">
                     <div class="footer__logo"><img src="img/logo.svg" alt="Dentals"></div>
                     <p class="footer__paragraph">Лицензия Минздравсоцразвития  ЧР № ЛО-21-01-001117<br> от 17.07.2010г<br> Стоматология Денталс</p>
                 </div>
-                <div class="footer__social">
-                    <a href="#" target="_blank" class=" footer__link text-size">Instagram</a>
-                    <a href="#" target="_blank" class="text-size">вконтакте</a>
+                <div class="footer__time">
+                    <div class="footer__social">
+                        <a href="#" target="_blank" class=" footer__link text-size">Instagram</a>
+                        <a href="#" target="_blank" class="text-size">вконтакте</a>
+                    </div>
+                    <div class="time">
+                        <p>8:30 - 20:00<br>без выходных</p>
+                    </div>
                 </div>
-                <div class="footer__contacts">
+                    <div class="footer__contacts">
                     <p>г.Вологда<br> ул.Луначарского д.54</p>
                     <p>89115021848</p>
                     <p>89115021856</p>
@@ -475,11 +482,10 @@
             <a class="close__popup">X</a>
             <h2>Перезвоните мне</h2>
             <p>Отправьте заявку и мы свяжемся с вами в ближайшее время </p>
-            <form name="form" action="/" method="post"> 
-                <label for="first_name">Имя</label> 
-                <input type="text" id="phone" name="first_name"  required  minlength="3">
-                <label for="last_name">Фамилия</label> 
-                <input type="text" name="last_name"  required>
+            <form name="form" >
+                <input type="hidden" name="title" value="Заказать звонок">
+                <label for="first_name">Ваше ФИО</label> 
+                <input type="text" id="phone" name="name"  required  minlength="3">
                 <label for="phone">Телефон</label> 
                 <input type="text" name="phone" required>
                 <button class="form-btn" type="submit">Отправить</button>
@@ -501,13 +507,14 @@
             <a class="close__popup">X</a>
             <h2>Запись на бесплатную консультацию</h2>
             <p>Отправьте заявку и мы свяжемся с вами в ближайшее время </p>
-            <form name="form1" action="/" method="post">
+            <form name="form1">
+                <input type="hidden" name="title" value="Бесплатная консультация">
                 <label for="full-name">Ваше ФИО</label> 
-                <input type="text" name="full-name"  required  minlength="3">
+                <input type="text" name="name"  required  minlength="3">
                 <label for="phone">Ваш телефон</label>  
                 <input type="text" id="phone" name="phone"  required>
                 <label for="email">Ваш E-mail</label> 
-                <input type="email"  id="e-mail" name="name" required>
+                <input type="email"  id="e-mail" name="mail" required>
                 <button class="form-btn" type="submit">Отправить</button>
             </form>
         </div>
@@ -520,15 +527,16 @@
             <a class="close__popup">X</a>
             <h2>Запись на прием к врачу</h2>
             <p>Отправьте заявку и мы свяжемся с вами в ближайшее время </p>
-            <form name="form1" action="/" method="post">
-                <label for="full-name">Ваше ФИО</label> 
-                <input type="text" name="full-name"  required >
+            <form name="form1">
+                <input type="hidden" name="title" value="Запись на приём">
+                <label for="name">Ваше ФИО</label> 
+                <input type="text" name="name"  required >
                 <label for="phone">Ваш телефон</label>  
                 <input type="text" id="phone" name="phone"  required>
                 <label for="email">Ваш E-mail</label> 
-                <input type="email"  id="e-mail" name="name" required>
+                <input type="email"  id="e-mail" name="mail" required>
                 <label for="full-name">Специалист / услуга</label> 
-                <input type="text" name="fuii-name" required>
+                <input type="text" name="full-name" required>
                 <button class="form-btn" type="submit">Записаться на прием</button>
             </form>
         </div>
@@ -539,6 +547,7 @@
 <script src="jquery.fancybox.min.js"></script>
 <script src="slick.min.js"></script>
 <script src="main.js"></script>
+<script src="form.js"></script>
 <script src="jquery.maskedinput.min.js"></script>
 </body>
 </html>
