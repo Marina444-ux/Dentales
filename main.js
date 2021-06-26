@@ -3,7 +3,7 @@
 
 
 $('.header__button').on('click', function() {
-    $('.callback') .css ({'top': $(window).scrollTop() +100}).addClass('active');
+    $('.callback').addClass('active');
   });
   
   $('.close__popup').on('click', function() {
