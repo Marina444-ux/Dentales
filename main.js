@@ -93,16 +93,22 @@ $(function() {
 });
 
 
-// let inputs = document.querySelectorAll('input[type = "phone"]');
-// let im = new Inputmask ('+7 (999) 999-99-99');
-// im.mask (inputs);
 
-// --------------Mаски ввода телефона и е-mail
+
+// --------------Mаски ввода телефона 
 
 $(document).ready(function() {
   $("#phone").mask("+7 (999) 999-99-99");
 });
 
+$(document).ready(function() {
+  $("#phone1").mask("+7 (999) 999-99-99");
+});
+
+$(document).ready(function() {
+  $("#phone2").mask("+7 (999) 999-99-99");
+});
+
 $(document).ready(function() {   
-  $("#e-mail").inputmask("email");
+  $("#email").inputmask("email");
 });
