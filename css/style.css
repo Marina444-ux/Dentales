@@ -1487,6 +1487,15 @@ iframe {
     .popup {
         margin-top: 30px;
     }
+    .popup input  {
+        width: 100%;
+    }
+    .popup form {
+        height: 320px;
+    }
+    .form-btn {
+        width: 100%;
+    }
     
  
 }
