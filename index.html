@@ -481,14 +481,15 @@
             <a class="close__popup">X</a>
             <h2>Перезвоните мне</h2>
             <p>Отправьте заявку и мы свяжемся с вами в ближайшее время </p>
-            <form name="form" >
+            <form name="form" id="form2" action = "" method = "post"  >
                 <input type="hidden" name="title" value="Заказать звонок">
                 <label for="first_name">Ваше ФИО</label> 
                 <input type="text" name="name"  required  minlength="3">
                 <label for="phone">Телефон</label> 
                 <input type="text" id="phone" name="phone" required>
-                <button class="form-btn" type="submit">Отправить</button>
+                <button class="form-btn" id="submit2" type="submit">Отправить</button>
             </form>
+            <div id = "erconts2" style = "display: none"></div>
         </div>
     </div> 
 <!-- -----------Всплывающее окно Заявка отправлена------------>
@@ -506,7 +507,7 @@
             <a class="close__popup">X</a>
             <h2>Запись на бесплатную консультацию</h2>
             <p>Отправьте заявку и мы свяжемся с вами в ближайшее время </p>
-            <form name="form1">
+            <form name="form1" id="form3" action = "" method = "post" >
                 <input type="hidden" name="title" value="Бесплатная консультация">
                 <label for="full-name">Ваше ФИО</label> 
                 <input type="text" name="name"  required  minlength="3">
@@ -526,7 +527,7 @@
             <a class="close__popup">X</a>
             <h2>Запись на прием к врачу</h2>
             <p>Отправьте заявку и мы свяжемся с вами в ближайшее время </p>
-            <form name="form1">
+            <form name="form1" id="form4" action = "" method = "post" >
                 <input type="hidden" name="title" value="Запись на приём">
                 <label for="name">Ваше ФИО</label> 
                 <input class="input" type="text" name="name"  required >
@@ -548,6 +549,5 @@
 <script src="main.js"></script>
 <script src="form.js"></script>
 <script src="jquery.maskedinput.min.js"></script>
-<script src="jquery.inputmask.js"></script>
 </body>
 </html>

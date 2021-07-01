@@ -1,6 +1,5 @@
 
 /* Общие стили */
-
 :root {
     --text-color: rgba(112, 113, 112, 1);
     --text-color-white: rgba(255, 255, 255, 1);
@@ -299,8 +298,6 @@ a {
     margin-top: 0;
 }
 
-
-
 .about__right-bottom {
     margin-top: 55px;
     margin-left: 70px;
@@ -312,7 +309,6 @@ a {
 }
 
  /*----------- Блок преимуществ------ */
-
 
 .merit__block-title {
     font-size: 24px;
@@ -340,7 +336,6 @@ a {
 }
 
 /* --------------Наши услуги--------------- */
-
 
 .services__text {
     text-align: center;
@@ -816,15 +811,8 @@ iframe {
     text-align: center;
     width: 100%;
     border: none;
+    cursor: pointer;
 }
-
-.input {
-
-}
-
-/* .text { */
-    /* height: 200px; */
-/* } */
 
 .popups__inner.active {
     display: block;
@@ -843,18 +831,18 @@ iframe {
 @media screen and (max-width: 1140px){
     .section-bgr {
     height: 520px;
-   }
-   .header__logo {
+    }
+    .header__logo {
         margin-left: 50px;
-   }
-   .section__left-title {
-       font-size: 48px;
-   }
-   .section__list-img {
-       width: 100%;
-       height: 100%;
-       margin-left: 80px;
-   }
+    }
+    .section__left-title {
+        font-size: 48px;
+    }
+    .section__list-img {
+        width: 100%;
+        height: 100%;
+        margin-left: 80px;
+    }
     .title {
         font-size: 36px;
         margin-top: 20px;
@@ -983,11 +971,9 @@ iframe {
     .merit__block-title {
         font-size: 20px;
     }
-    
     .xx-small {
         font-size: 14px;
     }  
-    
     .services__block {
         grid-template-columns: none;
         grid-row-gap: 30px;
@@ -1005,7 +991,6 @@ iframe {
         margin-left: 0; 
         margin-right: 0;
     }
-    
     .hardware__paragraph {
         margin-left: 220px;
     }
@@ -1025,7 +1010,6 @@ iframe {
         padding-right: 0;
         height: 400px;
     }
-    
     .reviews__paragraph {
         margin-left: 295px;
     }
@@ -1039,7 +1023,6 @@ iframe {
         margin-top: 15px;
     }
 }
-
 @media screen and (max-width: 768px){
     .section {
         align-items: center;
@@ -1058,7 +1041,6 @@ iframe {
     .header__button {
         display: none;
     }
-    
     .header__phone {
     margin-left: 90px;
     }
@@ -1115,7 +1097,6 @@ iframe {
         margin-left: 7px;
         line-height: 2;
         margin-top: 6px;
-
     }
     .about__right-span {
         font-size: 116px;
@@ -1196,9 +1177,6 @@ iframe {
         margin-top: 5px;
         margin-bottom: 15px;
     }
-
-
-    
     .reviews__content {
         display: block;
     }
@@ -1225,7 +1203,6 @@ iframe {
         margin: 0;
         margin-top: 30px;
     }
-    
     .reviews__paragraph {
         margin: 0;
     }
@@ -1253,7 +1230,6 @@ iframe {
         margin-top: 5px;
         margin-bottom: 15px;
     }
-    
     .question__form {
         padding: 30px 10px;
         margin-right: 0;
@@ -1279,7 +1255,6 @@ iframe {
     .footer__contacts p {
         font-size: 13px;
     }
-
     .popup {
         padding: 10px 15px;
         width: 80%;
@@ -1309,10 +1284,8 @@ iframe {
         margin-right: 15px;
     }
     .form-btn {
-        
         height: 38px;
         margin-top: 23px;
-    
         width: 45%;
     } 
     .popup form label {
@@ -1344,7 +1317,6 @@ iframe {
     .section__left {
         margin-left: 0;
     }
-
     .section__list-img {
         margin-left: 0px;
         
@@ -1355,12 +1327,10 @@ iframe {
     .section__left {
         margin-left: 20px;
     } 
-    
     .sectioh__left-btn {
         margin-top: 10px;
         margin-right: 20px;
     }
-    
     .section__left-title {
         font-size: 36px;
         margin-top: 0;
@@ -1377,7 +1347,6 @@ iframe {
         font-size: 26px;
         margin-bottom: 10px;
     }
-    
     .section__left {
         margin-left: 20px;
     }
@@ -1412,7 +1381,6 @@ iframe {
         justify-content: center;
         align-items: center;
     }
-    
     .services__block-title {
         margin-bottom: 5px;
         margin-top: 15px;
@@ -1439,7 +1407,6 @@ iframe {
         justify-content: center;
         align-items: center;
     }
-    
     .xxx-small {
         font-size: 12px;
     }
@@ -1496,8 +1463,6 @@ iframe {
     .form-btn {
         width: 100%;
     }
-    
- 
 }
 
 
