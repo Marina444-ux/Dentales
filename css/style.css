@@ -1035,7 +1035,7 @@ iframe {
     height: auto;
     }
     .header__logo {
-        padding-left: 45px;
+        padding-left: 70px;
         margin-left: 0;
     }
     .header__button {
@@ -1265,7 +1265,7 @@ iframe {
     }
     .popup h2 {
         font-size: 20px;
-        margin: 0;
+        margin-top: 20px;
     }
     .popup p {
         display: none;
@@ -1303,6 +1303,7 @@ iframe {
     }
     .header__logo {
         margin-left: 0px;
+        padding-left: 45px;
     }
     .header__phone {
         margin-left: 0px;
